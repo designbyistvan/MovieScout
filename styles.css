@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    width: 80%;
+    margin: auto;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+#logo {
+    color: rgb(16, 133, 223);
+    text-decoration: none;
+}
+
+.searchForm {
+    display: flex;
+    gap: 16px;
+}
+
+.searchForm input {
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid rgb(16, 133, 223);
+    border-radius: 8px;
+}
+
+.searchForm button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 16px;
+    background: rgb(16, 133, 223);
+    color: white;
+}
+
+.movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 80%;
+    margin: auto;
+    row-gap: 280px;
+    column-gap: 32px;
+}
+
+.moviesImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.movieInfo {
+    padding-bottom: 8px;
+    color: gray;
+}
+
+p {
+    margin-top: 16px;
+}
+
+/* CSS for movie card container */
+.movieCard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Limit card width */
+    margin-bottom: 32px; /* Spacing between cards */
+}
+
+/* CSS for movie image */
+.movieCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded corners only at the top */
+}
+
+/* CSS for movie info */
+.movieInfo {
+    padding: 16px;
+}
+
+/* CSS for movie title */
+.movieInfo h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+/* CSS for movie overview */
+.movieInfo p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
